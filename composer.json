@@ -1,5 +1,5 @@
 {
-  "name": "sebkln/ajaxselectlist",
+  "name": "chrisgruen/ajaxselectlist",
   "type": "typo3-cms-extension",
   "description": "Provides a drop-down list which uses Ajax to load records into the page.",
   "license": ["GPL-2.0-or-later"],
