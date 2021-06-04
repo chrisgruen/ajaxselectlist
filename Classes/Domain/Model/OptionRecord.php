@@ -1,15 +1,6 @@
 <?php
 namespace ChrisGruen\Ajaxselectlist\Domain\Model;
 
-/*
- * This file is part of the package sebkln/ajaxselectlist
- *
- * Copyright (c) 2016 Sebastian Klein <sebastian@sebkln.de>
- *
- * For the full copyright and license information, please read the
- * LICENSE file that was distributed with this source code.
- */
-
 /**
  * OptionRecord
  */

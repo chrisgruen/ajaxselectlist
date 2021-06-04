@@ -15,10 +15,10 @@ Links
 	https://typo3.org/extensions/repository/view/ajaxselectlist
 
 :Git Repository:
-	https://github.com/sebkln/ajaxselectlist
+	https://github.com/chrisgruen/ajaxselectlist
 
 :Packagist:
-	https://packagist.org/packages/sebkln/ajaxselectlist
+	https://packagist.org/packages/chrisgruen/ajaxselectlist
 
 :Contact:
-	sebastian@sebkln.de
+	sebastian@chrisgruen.de

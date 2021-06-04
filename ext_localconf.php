@@ -2,7 +2,7 @@
 defined('TYPO3_MODE') or die();
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    'Sebkln.ajaxselectlist',
+    'Chrisgruen.ajaxselectlist',
     'Selectlist',
     [
         'OptionRecord' => 'list, ajaxCall',
