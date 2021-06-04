@@ -7,7 +7,7 @@
 	"minimum-stability": "dev",
     "prefer-stable": true,
     "authors": [
-        {
+        {
             "name": "Christian Gruenwald",
             "email": "cg@romonta-schach.de",
             "homepage": "https://demochris.de/",
