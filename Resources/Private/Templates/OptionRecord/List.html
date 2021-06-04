@@ -1,0 +1,48 @@
+<f:layout name="Default"/>
+
+<f:section name="main">
+    
+    <f:if condition="{optionRecords}">
+        <f:then>
+            <f:form
+                    action="ajaxCall"
+                    object="{optionRecord}"
+                    name="optionRecord"
+                    id="ajaxselectlist-form">
+                    
+                <f:form.select
+                        options="{optionRecords}"
+                        optionLabelField="title"
+                        class="ajaxFormOption"
+                        id="ajaxselectlist-select"
+                        name="optionRecord"/>
+                
+                <f:form.hidden name="action" value="ajaxCall"/>
+                <input type="hidden" name="type" value="{settings.typeNum}">
+                <input type="hidden" name="L" value="{sysLanguageUid}">
+                <input type="hidden" name="id" value="{currentPageID}">
+            </f:form>
+        </f:then>
+        <f:else>
+            <f:translate key="tx_ajaxselectlist_domain_model_optionrecord.noEntriesFound"/>
+        </f:else>
+    </f:if>
+    
+    
+    <f:comment><!-- The record entry is loaded inside this element. --></f:comment>
+    <div id="ajaxCallResult"></div>
+    
+    
+    <f:comment><!-- Load one of the external JavaScript files just before the closing </body> tag. --></f:comment>
+    <f:section name="FooterAssets">
+        <f:if condition="{settings.useAjaxwithJQuery} == 1">
+            <f:then>
+                <script src="{f:uri.resource(path: 'JavaScript/ajax.jquery.js')}"></script>
+            </f:then>
+            <f:else>
+                <script src="{f:uri.resource(path: 'JavaScript/ajax.vanilla.js')}"></script>
+            </f:else>
+        </f:if>
+    </f:section>
+
+</f:section>

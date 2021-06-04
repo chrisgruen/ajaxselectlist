@@ -1,0 +1,67 @@
+plugin.tx_ajaxselectlist {
+    view {
+        templateRootPaths {
+            0 = EXT:ajaxselectlist/Resources/Private/Templates/
+            1 = {$plugin.tx_ajaxselectlist.view.templateRootPath}
+        }
+
+        partialRootPaths {
+            0 = EXT:ajaxselectlist/Resources/Private/Partials/
+            1 = {$plugin.tx_ajaxselectlist.view.partialRootPath}
+        }
+
+        layoutRootPaths {
+            0 = EXT:ajaxselectlist/Resources/Private/Layouts/
+            1 = {$plugin.tx_ajaxselectlist.view.layoutRootPath}
+        }
+    }
+
+    persistence {
+        storagePid = {$plugin.tx_ajaxselectlist.persistence.storagePid}
+        recursive = {$plugin.tx_ajaxselectlist.persistence.recursive}
+    }
+
+    settings {
+        typeNum = {$plugin.tx_ajaxselectlist.settings.typeNum}
+        useAjaxwithJQuery = {$plugin.tx_ajaxselectlist.settings.useAjaxwithJQuery}
+
+        media {
+            image {
+                maxWidth = {$styles.content.textmedia.maxW}
+                maxHeight =
+
+                # Get lightbox settings from fluid_styled_content:
+                lightbox {
+                    class = {$styles.content.textmedia.linkWrap.lightboxCssClass}
+                    rel = {$styles.content.textmedia.linkWrap.lightboxRelAttribute}
+                    width = {$styles.content.textmedia.linkWrap.width}
+                    height = {$styles.content.textmedia.linkWrap.height}
+                }
+            }
+        }
+    }
+
+    features {
+        requireCHashArgumentForActionArguments = 0
+    }
+}
+
+
+
+
+// PAGE object for Ajax call:
+ajaxselectlist_page = PAGE
+ajaxselectlist_page {
+    typeNum = 427590
+
+    config {
+        disableAllHeaderCode = 1
+        additionalHeaders = Content-type:application/html
+        xhtml_cleaning = 0
+        debug = 0
+        no_cache = 1
+        admPanel = 0
+    }
+
+    10 < tt_content.list.20.ajaxselectlist_selectlist
+}
