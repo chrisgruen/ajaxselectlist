@@ -1,10 +1,11 @@
 {
   "name": "chrisgruen/ajaxselectlist",
-  "type": "typo3-cms-extension",
-  "description": "Provides a drop-down list which uses Ajax to load records into the page.",
-  "license": ["GPL-2.0-or-later"],
-  "minimum-stability": "dev",
-  "prefer-stable": true,
+	"type" : "typo3-cms-extension",
+	"description" : "Test Ajax",
+	"homepage" : "https://github.com/chrisgruen/realty-manager",
+	"license" : "GPL-2.0-or-later",
+	"minimum-stability": "dev",
+    "prefer-stable": true,
   "keywords": [
     "TYPO3",
     "extension",
@@ -21,7 +22,7 @@
     }
   ],
   "require": {
-    "typo3/cms-core": "^9.5.17 || ^10.4.12"
+    "bk2k/bootstrap-package" : "^11.0",
   },
   "replace": {
     "typo3-ter/ajaxselectlist": "self.version"
