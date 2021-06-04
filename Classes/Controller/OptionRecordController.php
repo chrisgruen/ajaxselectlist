@@ -1,5 +1,5 @@
 <?php
-namespace Sebkln\Ajaxselectlist\Controller;
+namespace ChrisGruen\Ajaxselectlist\Controller;
 
 /*
  * This file is part of the package sebkln/ajaxselectlist
@@ -22,7 +22,7 @@ class OptionRecordController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCon
     /**
      * optionRecordRepository
      *
-     * @var \Sebkln\Ajaxselectlist\Domain\Repository\OptionRecordRepository
+     * @var \ChrisGruen\Ajaxselectlist\Domain\Repository\OptionRecordRepository
      * @inject
      */
     protected $optionRecordRepository = NULL;
@@ -51,10 +51,10 @@ class OptionRecordController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCon
     /**
      * action ajaxCall
      *
-     * @param \Sebkln\Ajaxselectlist\Domain\Model\OptionRecord $optionRecord
+     * @param \ChrisGruen\Ajaxselectlist\Domain\Model\OptionRecord $optionRecord
      * @return void
      */
-    public function ajaxCallAction(\Sebkln\Ajaxselectlist\Domain\Model\OptionRecord $optionRecord)
+    public function ajaxCallAction(\ChrisGruen\Ajaxselectlist\Domain\Model\OptionRecord $optionRecord)
     {
         $this->view->assign('optionRecord', $optionRecord);
     }

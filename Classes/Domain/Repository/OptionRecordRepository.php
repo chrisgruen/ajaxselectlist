@@ -1,5 +1,5 @@
 <?php
-namespace Sebkln\Ajaxselectlist\Domain\Repository;
+namespace ChrisGruen\Ajaxselectlist\Domain\Repository;
 
 /*
  * This file is part of the package sebkln/ajaxselectlist
